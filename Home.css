@@ -1,0 +1,80 @@
+body{
+  overflow-x:hidden;
+}
+   h3{
+        text-align:center;
+        margin:2%;
+      }
+      .makeup p ,h1{
+        margin:10%;
+      
+      }
+     h1{
+        color:#6a2b59;
+      }
+      .card{
+        border:none;
+      }
+      h1{
+         text-shadow:1px 1px 10px mistyrose;
+      }
+      .download{
+  background-color:seashell;
+  padding:3%;
+}
+.download h2{
+  text-align:center;
+  font-family:monospace; 
+  padding-left:1%;
+  margin-top:10%;
+}
+.download img[alt="down"]{
+  position:relative;
+  right:-60px;
+}
+  @media (min-width: 992px){
+    .dropdown-menu .dropdown-toggle:after{
+      border-top: .3em solid transparent;
+        border-right: 0;
+        border-bottom: .3em solid transparent;
+        border-left: .3em solid;
+    }
+
+    .dropdown-menu .dropdown-menu{
+      margin-left:0; margin-right: 0;
+    }
+
+    .dropdown-menu li{
+      position: relative;
+    }
+    .nav-item .submenu{ 
+      display: none;
+      position: absolute;
+      left:100%; top:-7px;
+    }
+    .nav-item .submenu-left{ 
+      right:100%; left:auto;
+    }
+
+    .dropdown-menu > li:hover{ background-color: #f1f1f1 }
+    .dropdown-menu > li:hover > .submenu{
+      display: block;
+    }
+  }
+  
+.account{
+  margin-top:5%;
+  margin-bottom:5%;
+}
+#Added,#Denied{
+  display:none;
+}
+.gift{
+  border:1px solid rgba(0,0,0,.125);
+}
+.Social a {
+  color:black;
+}
+.Social a:hover{
+  color:black;
+}  

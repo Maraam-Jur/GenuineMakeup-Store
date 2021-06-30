@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Page head -->
+<head>
+  <!-- Page title -->
+  <title> Genuine Makeup </title>
+  <!-- meta data -->
+  <meta charset="utf-8">
+    <meta name="description" content="Front-end web development final project">
+    <meta name="author" content="Maram Rida Junrazi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- External links -->
+    <!--<link rel="stylesheet" type="text/css" href="project.css">-->
+    <!-- Title Icon -->
+    <link rel="icon" type="image/ico" href="Images/new.PNG" />
+    <!-- Font Awesome Icons -->
+    <!-- Bootstrap Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Javascript -->
+    <script src="project.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- CSS FILE -->
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <!-- font awesome library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Navigation bar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="Images/new.PNG" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Genuine Makeup
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+    <ul class="navbar-nav ml-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Products</a>
+      <ul class="dropdown-menu">
+      <li><a class="dropdown-item dropdown-toggle" href="Home.html#Makeup">Makeup</a>
+         <ul class="submenu dropdown-menu">
+          <li><a class="dropdown-item" href="Home.html#Lip">Lipstick Products</a></li>
+          <li><a class="dropdown-item" href="Home.html#Ski">Skin Products</a></li>
+          <li><a class="dropdown-item" href="Home.html#Bru">Brush collection</a></li>
+       </ul>
+      </li>
+      <li><a class="dropdown-item dropdown-toggle" href="Home.html#SKINcare">Skincare</a>
+         <ul class="submenu dropdown-menu">
+          <li><a class="dropdown-item" href="Home.html#Cleansers">Cleansers</a></li>
+          <li><a class="dropdown-item" href="Home.html#Serums">Serums</a></li>
+          <li><a class="dropdown-item" href="Home.html#Toners">Toners</a></li>
+       </ul>
+      </li>
+      <li><a class="dropdown-item dropdown-toggle" href="Home.html#Organic">Organic products</a>
+         <ul class="submenu dropdown-menu">
+          <li><a class="dropdown-item" href="Home.html#SkinBri">Skin brightening</a></li>
+          <li><a class="dropdown-item" href="Home.html#Face">Face oils products</a></li>
+          <li><a class="dropdown-item" href="Home.html#Scrubs">Scrubs and Masks</a></li>
+       </ul>
+      </li>
+       <li><a class="dropdown-item dropdown-toggle" href="Home.html#Hair">Hair products</a>
+         <ul class="submenu dropdown-menu">
+          <li><a class="dropdown-item" href="Home.html#Shampo"> Shampo Products</a></li>
+          <li><a class="dropdown-item" href="Home.html#ALCINA">ALCINA Products</a></li>
+       </ul>
+      </li>
+    
+      </ul>
+  </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">
+          Your Account
+        </a>
+ <!-- Modal for account number -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your current connected accounts </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Your current connected bankaccount to our website is <br> 015 221 000056229 . all of your purchaces on this website are 
+        used by this card number .
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" onclick="window.location.href='account.html'">Add another account </button>
+      </div>
+    </div>
+  </div>
+</div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Home.html#Gift">
+         Gift Cards
+      </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#download">
+           Download App
+      </a>
+      </li>
+   <li class="nav-item dropdown">
+        <a  role="link" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-user fa-lg" style="color:#dc3545;"></i> Profile </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+          <a class="dropdown-item" href="#" onclick="logOut()">Log out</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- End of Navigation bar -->
+<!-- add account form -->
+<div class="container account">
+  <div class="alert alert-danger" id="Denied"></div>
+  <div class="alert alert-success" id="Added"></div>
+     <h4 class="text-uppercase">Payment Details</h4>
+    <form class="form mt-4">
+        <div class="form-group"> <label for="cardName" class="text-uppercase">name on the card</label> <input type="text" class="form-control" placeholder="Nicolos Flemming" id="cardName"> </div>
+        <div class="form-group"> <label for="cardNumber" class="text-uppercase">card number</label>
+            <div class="card-number"> <input type="text" class="card-no"  placeholder="1234 4567 5869 1234" pattern="^[0-9].{15,}" id="cardNumber"> <span class=""> <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-marcus-samuelsson-group-2.png" alt="" width="30" height="30"> </span> </div>
+        </div>
+        <div class="d-flex w-100">
+            <div class="d-flex w-50 pr-sm-4">
+                <div class="form-group"> <label for="date" class="text-uppercase">exp.date</label> <input type="date" class="form-control" id="date"> </div>
+            </div>
+            <div class="d-flex w-50 pl-sm-5 pl-3">
+                <div class="form-group"> <label for="CVV">CVV</label> <a href="#" title="CVV is a credit or debit card number, the last three digit number printed on the signature panel"></a> <input type="password" class="form-control pr-5" maxlength="3" placeholder="123" id="CVV"> </div>
+            </div>
+        </div>
+        <div class="form-inline pt-sm-3 pt-2"> <input type="checkbox" name="address" id="address"> <label for="address" class="px-sm-1 pl-1 pt-sm-0 pt-2">My billing address is the same as the shipping</label> </div>
+        <div class="form-inline py-sm-2"> <input type="checkbox" name="details" id="details"> <label for="details" class="px-sm-2 pl-2 pt-sm-0 pt-2">Save my details for future purchases</label> </div>
+        <div class="my-3"> <input type="button" value="Add new account" class="text-uppercase btn btn-primary btn-block p-3"
+          onclick="addAccount()"> </div>
+        <div id="form-footer">
+            <p>By placing your order, you agree to our</p>
+            <p><a href="" data-toggle="modal" data-target="#TermOFservicesModal">privacy notice and terms of use</a>.</p>
+            <div class="modal" tabindex="-1" role="dialog"  id="TermOFservicesModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Term of Services</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+        Help protect your website and its users with clear and fair website terms and conditions. These terms and conditions for a website set out key issues such as acceptable use, privacy, cookies, registration and passwords, intellectual property, links to other sites, termination and disclaimers of responsibility. Terms and conditions are used and necessary to protect a website owner from liability of a user relying on the information or the goods provided from the site then suffering a loss.
+
+       Making your own terms and conditions for your website is hard, not impossible, to do. It can take a few hours to few days for a person with no legal background to make. But worry no more; we are here to help you out.
+
+      All you need to do is fill up the blank spaces and then you will receive an email with your personalized terms and conditions.
+
+     Looking for a Privacy Policy? Check out <a href="#">Privacy Policy Generator.</a>
+
+     The accuracy of the generated document on this website is not legally binding. Use at your own risk.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+    </form>
+</div>
+<!-- add account form -->
+<!-- footer -->
+<div class="container-fluid download" id="download">
+  <div class="row">
+   <div class="col-md-3"></div>
+    <div class="col-md-4">
+      <figure>
+    <a href="#"><img src="Images/New.PNG" width="120" height="120" alt="icon"></a>
+  </figure>
+  <h4>Genuine Makeup </h4>
+  <p>Theme by | Maram Rida Jurnazi | <br><br> &copy;  2020 All rights reserved<br><br>
+       <i class="fa fa-envelope"></i> maraam.aljurnazi@gmail.com<br>
+       <i class="fa fa-map-marker"></i> Tripoli,Libya Almansoura<br>
+       <i class="fa fa-phone"></i> +218 91 366-076
+   
+   </p>
+    </div>
+    <div class="col-md-3">
+    <figure id="Download">
+    <a href="#"><img src="Images/App_Store.PNG" width="50" height="50" alt="down"></a>
+    <a href="#"><img src="Images/googleplay.PNG" width="50" height="50" alt="down"></a>
+  </figure>
+  <h4>Genuine Makeup App</h4>
+  <p>Theme by | Maram Rida Jurnazi | <br><br> 
+    Enjoy our app on both Google store and App store on your phone.
+    By using our app You will Be able to choose different makeup products and have the best options for everyday look &copy; 2020
+   </p>
+    </div>
+</div>
+ </div>
+ <div class="row bg-light Social">
+    <div class="col-md-3 col-sm-3 text-center">
+      <a href="https://twitter.com/search-home?lang=ar"><i class="fa fa-twitter"></i></a>
+</div>
+    <div class="col-md-3 col-sm-3 text-center">
+      <a href="https://twitter.com/search-home?lang=ar"><i class="fa fa-facebook-square"></i></a>
+    </div>
+    <div class="col-md-3  col-sm-3 text-center">
+      <a href="https://twitter.com/search-home?lang=ar"><i class="fa fa-snapchat-ghost"></i></a>
+    </div>
+     <div class="col-md-3 col-sm-3 text-center">
+      <a href="https://twitter.com/search-home?lang=ar"><i class="fa fa-dropbox"></i></a>
+     </div>
+ </div>
+</body>
+</html>

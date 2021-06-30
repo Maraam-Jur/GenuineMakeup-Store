@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Page head -->
+<head>
+	<!-- Page title -->
+	<title> Genuine Makeup </title>
+	<!-- meta data -->
+	  <meta charset="utf-8">
+    <meta name="description" content="Front-end web development final project">
+    <meta name="author" content="Maram Rida Junrazi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- External links -->
+     <!-- Bootstrap Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--  CSS -->
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <!-- Title Icon -->
+    <link rel="icon" type="image/ico" href="Images/new.PNG" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Javascript -->
+    <script  src="project.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<!-- Page body -->
+<body>
+<!-- Header -->
+<!-- Navigation bar -->
+
+<nav class=" navbar navbar-expand-lg navbar-light bg-light ">
+  <a class="navbar-brand" href="#">
+    <img src="Images/new.PNG" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Genuine Makeup
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#About">
+          About
+      </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#FAQ">
+          FAQ
+      </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Contact">
+          Contact US
+      </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Download">
+          Download App
+      </a>
+      </li>
+     <li class="nav-item">
+        <button type="button" class="btn btn-danger" id="Sign_Up_button" data-toggle="modal" data-target="#Form_POP">Log In</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Log In POPUP FORM -->
+<div class="modal fade" id="Form_POP" tabindex="-1" role="dialog" aria-labelledby="ModalLogIn" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLogIn">Log In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="Pop-Up">
+      	<div id="error" class="alert alert-danger"></div>
+        <div class="form-group">
+         <i class="fa fa-envelope fa-lg"></i>
+         <label for="Pop-Up-email">Email address</label>
+         <input type="email" class="form-control" id="Pop-Up-email" aria-describedby="emailLog">
+         <small id="emailLog" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+  	 <i class="fa fa-lock fa-lg"></i>
+        <label for="Pop-Up-password">Password</label>
+        <input type="password" class="form-control" id="Pop-Up-password">
+    </div>
+      <div class="form-group form-check">
+       <input type="checkbox" class="form-check-input" id="exampleCheck1">
+       <label class="form-check-label" for="exampleCheck1">Send me email updates</label>
+      </div>
+  </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-danger" onclick="LogForm()">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Jumbotron Home section -->
+<div class="jumbotron jumbotron-fluid ">
+  <h1 class="display-4">Welcome to Genuine Makeup</h1>
+  <p class="lead">your right place to get your favourite makeup brands with the same prices and right to your home.</p>
+  <!-- Button trigger modal --> 
+<button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#Join_POP">
+  Join Now
+</button>
+</div>
+<!--  Join POPUP FORM -->
+<div class="modal fade" id="Join_POP" tabindex="-1" role="dialog" aria-labelledby="ModalJoinNow" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalJoinNow">Join Now</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="Pop-Up">
+        <div id="joinerror" class="alert alert-danger"></div>
+        <div id="joinsuccess" class="alert alert-success">
+          You will receive an email with more details to finish your upcoming steps in the following proccess , 
+          if you didn't recieve the email within 15 mins please ask to send it again <a href="#">Send email again </a>
+        </div>
+        <div class="form-group">
+         <i class="fa fa-user fa-lg"></i>
+         <label for="Join-username">Username</label>
+         <input type="text" class="form-control" id="Join-username">
+  </div>
+        <div class="form-group">
+         <i class="fa fa-envelope fa-lg"></i>
+         <label for="Join-email">Email address</label>
+         <input type="email" class="form-control" id="Join-email" aria-describedby="emailJoin">
+         <small id="emailJoin" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+     <i class="fa fa-lock fa-lg"></i>
+        <label for="Join-password">Password</label>
+        <input type="password" class="form-control" id="Join-password">
+    </div>
+     <div class="form-group">
+     <i class="fa fa-lock fa-lg"></i>
+        <label for="Join-password-repeat">Repeat Password</label>
+        <input type="password" class="form-control" id="Join-password-repeat">
+    </div>
+      <div class="form-group form-check">
+       <input type="checkbox" class="form-check-input" id="exampleCheck2">
+       <label class="form-check-label" for="exampleCheck2">I agree to all terms of serivces and secruity <a href="#" data-toggle="modal" data-target="#TermOFservicesModal"> Terms of services </a></label>
+      </div>
+  </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-danger" onclick="JoinForm()">Join</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" role="dialog"  id="TermOFservicesModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Term of Services</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+        Help protect your website and its users with clear and fair website terms and conditions. These terms and conditions for a website set out key issues such as acceptable use, privacy, cookies, registration and passwords, intellectual property, links to other sites, termination and disclaimers of responsibility. Terms and conditions are used and necessary to protect a website owner from liability of a user relying on the information or the goods provided from the site then suffering a loss.
+
+       Making your own terms and conditions for your website is hard, not impossible, to do. It can take a few hours to few days for a person with no legal background to make. But worry no more; we are here to help you out.
+
+      All you need to do is fill up the blank spaces and then you will receive an email with your personalized terms and conditions.
+
+     Looking for a Privacy Policy? Check out <a href="#">Privacy Policy Generator.</a>
+
+     The accuracy of the generated document on this website is not legally binding. Use at your own risk.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<!--  Header -->
+<!-- Main content -->
+<div class="container" id="About">
+  <div class="row">
+    <div class="col-md-8">
+        <h2>Our Store in a glance</h2>
+        <q class="about-quote" cite="https://www.goodreads.com/quotes/tag/makeup">What red can do for the spirit, it can also do for the face. <small> -Sophia Loren</small></q>
+        <p class="about-intro">
+          <br>
+        As women , Getting our favorite brand of makeup is always tricky , either it is unavailable or it is available in a low-copy version.
+        MakeupOnline is an online store from where you can buy your makeup and make sure that it meets the highest standrad of your expections.
+        We started in 2017 and since then we have copaerated with multiple makeups brands and made sure that in no time you will choose our website as one of your top-favorites online stores !
+        We are working on opening a real shop down here in the next few months , it will contain all the website material and also makeup experts too , keep in touch becuase we are opening in <time datetime="2020-09-09T13:53">Sebtember the <sup>9th</sup> </time>!
+        help you pick the best for your look ! Follow us on Instgram And stay tuned <a href="https://www.instagram.com" target="blank">Genuine Makeup</a><i class="fa fa-instagram" style="font-size:30px"></i></p>
+    </div>
+    <div class="col-md-4">
+      <figure>
+      <img src="Images/calendar.PNG" alt="calendar" class="calendar">
+    </figure>
+    </div>
+  </div>
+<hr>
+<br>
+<div class="row">
+<div class="col-md-8 about-intro">
+ <h2>Why Choose our website and store  ?</h2>
+  You may ask yourself this , why choose Genuin Makeup as your makeup store ?
+  We will answer this breifly .
+  Our store contains THE best makeup brands all over the world with competitive prices , we will ensure that your products 
+  are deliverd to your door with a confirmation of their originality and make sure to hear feedbacks from you .
+  We have a special team for customer feedbacks and they are working constantly for your comfort and trust in us !
+  You can also use the app if you would like and download it from here 
+</div>
+<div class="col-md-4">
+  <figure>
+      <img src="Images/store.JPG" alt="store" class="store rounded float-left">
+    </figure>
+</div>
+</div>
+<hr><br>
+<div class="row">
+<div class="col-md-8 about-intro">
+ <h2> Our skincare section is ready for you to relax </h2>
+  Good skin care is important for the following reasons: It helps your skin stay in good condition: You're shedding skin cells throughout the day, so it's important to keep your skin glowing and in good condition. An effective routine can help prevent acne, treat wrinkles, and help keep your skin looking its best . At our store , alongside with the beauty salon using our makeup procuts you will have a 
+  spa using our finest skin care products for you to relax and have the best skin ever .
+</div>
+<div class="col-md-4">
+  <figure>
+      <img src="Images/skincare.JPG" alt="skincare" class="skincare rounded float-left">
+    </figure>
+</div>
+</div>
+</div>
+<br>
+<!-- Main content -->
+<!-- FAQ -->
+<div class="container-fluid FAQ" id="FAQ">
+  <div class="row">
+    <div class="col-md-1 col-sm-1 col-lg-1 col-xs-1"></div>
+    <div class="col-md-4 col-sm-4 col-xs-4">
+      <section>
+        <h2>FAQ</h2>
+        <p>
+             You can find our top most frequently asked questions in the shown list , these questions were chosen as the most repeated ones that we get . You have another question ? you may contact us <a href="#Contact">here</a>
+        </p>
+      </section>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6">
+   <ul>
+    <li>
+      <a  onclick="showAnswerOne()">Can I join the website without having a credit card ?
+        <p id="Hidden-Answer-one">
+        </p>
+      </a>
+    </li>
+    <li>
+      <a   onclick="showAnswerTwo()"> Do you sell orgarnic makeup products ?
+      <p id="Hidden-Answer-two">
+        </p>
+      </a>
+    </li>
+    <li>
+      <a  onclick="showAnswerThree()"> Can I send a gift cards through your website ?
+      <p id="Hidden-Answer-three">
+        </p>
+      </a>
+    </li>
+    <li>
+      <a  onclick="showAnswerFour()">How can I link my account here to my bank account ?
+      <p id="Hidden-Answer-four">
+        </p>
+      </a>
+    </li>
+  </ul>
+    </div>
+    <div class="col-md-1 col-sm-1 col-lg-1 col-xs-1"></div>
+  </div>
+</div>
+<!-- FAQ -->
+<!-- Contact us -->
+<div class="container-fluid contact" id="Contact">
+  <div class="row">
+    <div class="col-md-3"></div>
+<div class="col-md-6">
+  <h2> Contact us here for more questions </h2>
+    <form>
+  <div class="form-group">
+    <input type="email" class="form-control" id="contact-email" placeholder="Enter your email here">
+  </div>
+  <div class="form-group">
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Technical Question</option>
+      <option>Purshacing Question </option>
+      <option>Registration Question</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" id="contact-message" rows="4"></textarea>
+  </div>
+<div class="row justify-content-center form-group">
+<button type="button" class="btn btn-lg btn-danger" onclick="contact()">Send Message</button>
+</div>
+</form>
+</div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+<!-- Contact us -->
+<!-- footer -->
+<div class="container-fluid download">
+  <div class="row">
+   <div class="col-md-3"></div>
+    <div class="col-md-4">
+      <figure>
+    <a href="#"><img src="Images/New.PNG" width="120" height="120" alt="icon"></a>
+  </figure>
+  <h4>Genuine Makeup </h4>
+  <p>Theme by | Maram Rida Jurnazi | <br><br> &copy;  2020 All rights reserved<br><br>
+       <i class="fa fa-envelope"></i> maraam.aljurnazi@gmail.com<br>
+       <i class="fa fa-map-marker"></i> Tripoli,Libya Almansoura<br>
+       <i class="fa fa-phone"></i> +218 91 366-076
+   
+   </p>
+    </div>
+    <div class="col-md-3">
+    <figure id="Download">
+    <a href="#"><img src="Images/App_Store.PNG" width="50" height="50" alt="down"></a>
+    <a href="#"><img src="Images/googleplay.PNG" width="50" height="50" alt="down"></a>
+  </figure>
+  <h4>Genuine Makeup App</h4>
+  <p>Theme by | Maram Rida Jurnazi | <br><br> 
+    Enjoy our app on both Google store and App store on your phone.
+    By using our app You will Be able to choose different makeup products and have the best options for everyday look &copy; 2020
+   </p>
+    </div>
+</div>
+ </div>
+ <div class="row bg-light Social">
+    <div class="col-md-3 col-sm-3 text-center">
+      <a href="https://twitter.com/search-home?lang=ar"><i class="fa fa-twitter"></i></a>
+</div>
+    <div class="col-md-3 col-sm-3 text-center">
+      <a href="https://google.com"><i class="fa fa-facebook-square"></i></a>
+    </div>
+    <div class="col-md-3  col-sm-3 text-center">
+      <a href="https://google.com"><i class="fa fa-snapchat-ghost"></i></a>
+    </div>
+     <div class="col-md-3 col-sm-3 text-center">
+      <a href="https://google.com"><i class="fa fa-dropbox"></i></a>
+     </div>
+ </div>
+<!-- footer -->
+</body>
+</html>
